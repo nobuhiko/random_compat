@@ -195,28 +195,9 @@ if (!is_callable('random_bytes')) {
     }
 
     /**
-     * openssl_random_pseudo_bytes()
+     * openssl_random_pseudo_bytes() is no longer used as a fallback (as in random_compat 2.0):
+     * it is not a suitable CSPRNG on the old OpenSSL / PHP combinations that would reach this point.
      */
-    if (
-        (
-            // Unix-like with PHP >= 5.3.0 or
-            (
-                DIRECTORY_SEPARATOR === '/'
-                &&
-                PHP_VERSION_ID >= 50300
-            )
-            ||
-            // Windows with PHP >= 5.4.1
-            PHP_VERSION_ID >= 50401
-        )
-        &&
-        !function_exists('random_bytes')
-        &&
-        extension_loaded('openssl')
-    ) {
-        // See random_bytes_openssl.php
-        require_once $RandomCompatDIR . '/random_bytes_openssl.php';
-    }
 
     /**
      * throw new Exception
