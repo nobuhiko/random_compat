@@ -1,5 +1,7 @@
 # random_compat 1.4.3 without the OpenSSL fallback, for EC-CUBE 3.0.x
 
+[![tests](https://github.com/umiushi-lab/random_compat/actions/workflows/tests.yml/badge.svg?branch=eccube3%2F1.4)](https://github.com/umiushi-lab/random_compat/actions/workflows/tests.yml) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/umiushi-lab/random_compat/badge)](https://scorecard.dev/viewer/?uri=github.com/umiushi-lab/random_compat)
+
 EC-CUBE 3.0.18 ships `paragonie/random_compat` 1.4.3. This fork keeps 1.4.3 and removes the insecure fallback. It only matters on PHP 5; PHP 7 and later use the native `random_bytes()`.
 
 ## Fixed
