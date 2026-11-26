@@ -13,7 +13,7 @@ EC-CUBE 3.0.18 ships `paragonie/random_compat` 1.4.3. This fork keeps 1.4.3 and 
 Requires Composer 2. In the shop's project root:
 
 ```
-composer require nobuhiko/random_compat:^1.4.3
+composer require umiushi-lab/random_compat:^1.4.3
 ```
 
 The package `replace`s `paragonie/random_compat` 1.4.3, so Composer removes the original and every other package keeps working against the same version.

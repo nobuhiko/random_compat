@@ -1,5 +1,5 @@
 {
-    "name": "nobuhiko/random_compat",
+    "name": "umiushi-lab/random_compat",
     "description": "random_compat 1.4.3 with security fixes backported, for EC-CUBE 3.0.x shops that cannot move off the versions EC-CUBE 3.0.18 ships",
     "keywords": [
         "csprng",
@@ -27,6 +27,6 @@
         "paragonie/random_compat": "1.4.3"
     },
     "support": {
-        "issues": "https://github.com/nobuhiko/random_compat/issues"
+        "issues": "https://github.com/umiushi-lab/random_compat/issues"
     }
 }
